@@ -56,4 +56,8 @@ public Ansatt(String fornavn, String etternavn, Kjonn kjonn, String stilling, in
 	public void setAarslonn(int aarslonn) {
 		this.aarslonn = aarslonn;
 	}
+	@Override
+    public String toString() {
+        return fornavn + " " + etternavn + ", " + kjonn + ", " + stilling + ", Aarslonn: " + aarslonn;
+    }
 }
